@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bulma/bulma.min.css">
+    <link rel="stylesheet" href="css/base/style.css">
+
+    <script src="js/jquery/jquery-3.5.1.min.js"></script>
+
+    <title>Twin Lion</title>
+  </head>
+
+
+  <body>
+
+
+    <div class="nav-bar">
+     
+      <img src="img/logo.png" class="logo">
+
+      <ul style="float: right;">
+        <a><li><img src="img/hamburger.png" class="hamburger"></li></a>
+      </ul>
+    </div>
+
+
+    <div class="side-bar is-hidden">
+      <a><img src="img/x.png" class="side-bar-close"></a>
+      <ul>
+        <li><a href="/about.html">ABOUT US</a></li>
+        <li><a href="/menu.html">MENU</a></li>
+        <li><a href="">ORDER ONLINE</a></li>
+        <li><a href="location.html">CONTACT & LOCATION</a></li>
+      </ul>
+    </div>
+
+
+
+
+    <img src="/img/bg.jpg" class="bg block">
+
+
+
+
+  <div class="menu">
+
+      <h3 style="text-align: center;">MENU</h3>
+      <p style="text-align: center; margin-bottom: 100px;">Dinner</p>
+
+      <div class="tile is-ancestor">
+        <div class="tile is-4 is-vertical is-parent">
+          <div class="tile is-child" style="padding: 30px; background-color: #f4f4f4;">
+          
+            <div>
+              <h5>1. Sesame Chicken</h5>
+              <p>Sliced Chicken Fried Until Crisp...</p>
+              <p>$10.95</p>
+
+              <hr/>
+
+              <h5>2. General Tso's Chicken (Dark Meat)</h5>
+              <p>Sliced Chicken Fried Until Crisp...</p>
+              <p>$10.95</p>
+
+              <hr/>
+
+              <h5>2. General Tso's Chicken (Dark Meat)</h5>
+              <p>Sliced Chicken Fried Until Crisp...</p>
+              <p>$10.95</p>
+
+              <hr/>
+
+              <h5>3. Title</h5>
+              <p>description...</p>
+              <p>$10.95</p>
+
+              <hr/>
+            </div>
+          
+          </div>
+       
+        </div>
+        <div class="tile is-parent">
+          <div class="tile is-child" style="padding: 30px;">
+
+
+            <img src="img/roll.jpg" style="border: solid 8px #fbd065; width: 300px; height: auto; margin: 10px;">
+
+            <img src="img/dumpling.jpg" style="border: solid 8px #fbd065; width: 300px; height: auto; margin: 10px;">
+
+            <img src="img/chicken.jpg" style="border: solid 8px #fbd065; width: 300px; height: auto; margin: 10px;">
+
+            <img src="img/pot.jpg" style="border: solid 8px #fbd065; width: 300px; height: auto; margin: 10px;">
+            
+          </div>
+        </div>
+      </div>
+
+
+
+    </div> <!-- END BLOCK -->
+
+
+    <div style="text-align: center; margin-top: 100px;">
+      <img src="img/menu1.jpeg" style="height: auto;">
+      <img src="img/menu2.jpeg" style="height: auto;">
+      <img src="img/menu3.jpeg" style="height: auto;">
+      <img src="img/menu4.jpeg" style="height: auto;">
+    </div>
+
+
+ 
+    <footer>
+
+
+      <div class="tile is-ancestor">
+
+        <div class="tile is-vertical is-6">
+
+          <div class="tile">
+
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification">
+                <div style="padding-left: 30%;">
+                  <p class="title" style="padding-bottom: 30px;">Location:</p>
+                  <p style="font-size: 23px; font-weight: 500;">4815 W Braker Lane Ste 510 <br/>
+                    Austin, Tx 78759</p>
+                  </div>
+              </article>
+            </div>
+        
+          </div>
+     
+        </div>
+
+        <div class="tile is-parent">
+          <article class="tile is-child notification">
+            <div class="content" style="padding-left: 30%;">
+              <p class="title" style="padding-bottom: 30px;">Contact:</p>
+              <p style="font-size: 23px; font-weight: 500;">Phone: 512-794-8772</p>
+              <div class="content">
+                <img src="img/facebook.jpg" style="width: 60px; margin-right: 15px;">
+                <img src="img/yelp.jpg" style="width: 60px; margin-right: 15px;">
+                <img src="img/insta.jpg" style="width: 60px; margin-right: 15px;">
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    
+
+      <div style="text-align: center;">
+        <div class="credits">
+          <ul>
+            <li>Privacy Policy</li>
+            <li> | Cookie Policy</li>
+            <li> | Conditions of Use</li>
+            <li> | Notice and Take down policy</li>
+            <li> | Website Accessibility Policy</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+    <script>
+      $(document).ready(function() {
+
+        // Check for click events on the navbar burger icon
+        $(".hamburger").click(function() {
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          if( $(".side-bar").hasClass("is-hidden") )
+          {
+            $(".side-bar").removeClass("is-hidden");
+            $(".side-bar").addClass("is-active");
+          }
+          else if( $(".side-bar").hasClass("is-active") )
+          {
+            $(".side-bar").removeClass("is-active");
+            $(".side-bar").addClass("is-hidden");
+          }
+
+        });
+
+        $(".side-bar-close").click(function() {
+          $(".side-bar").removeClass("is-active");
+          $(".side-bar").addClass("is-hidden");
+        });
+
+      });
+    </script>
+
+
+
+  </body>
+
+
+</html>
