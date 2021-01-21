@@ -21,6 +21,20 @@ h5 {
     z-index: -10;
 }
 
+
+.selector select{
+    border: none;
+    background-color: #ff000000;
+    padding:8px;
+    font-size: 30px;
+    color: #f9bf31;
+    
+}
+
+select option{
+    background-color: #6f0b0bd6;
+}
+
 .menu {
     margin: 150px;
 }
@@ -160,6 +174,7 @@ footer p {
 }
 
 .side-bar li {
+    margin-bottom: 10px;
     float: none;
     font-size: 30px;
     text-align: center;
